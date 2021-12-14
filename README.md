@@ -19,16 +19,16 @@ For the `subql-starter` project, you can try to query with the following code to
 ````graphql
 {
   query{
-	  transfers(first: 5){
-		  nodes{
-			  id
-        amount
-        blockNumber
+    transfers(first:5){
+      nodes{
+        id,
+        amount,
+        blockNumber,
         to {
           id
-          }
-		    }
-	    }
+        }
+      }
     }
+  }
 }
 ````
